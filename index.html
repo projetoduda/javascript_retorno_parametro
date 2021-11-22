@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorno de funçoes de parametros</title>
+    <script src="retorno.js"></script>
+</head>
+<body>
+   <h1>Resultado</h1>
+   
+   <script>
+       num1= parseFloat(prompt("Digite o Primiro valor:"))
+       num2= parseFloat(prompt("Digite o Segundo valor:"))
+       resp= parseInt(prompt("Digite /n 1 para Somar /n 2 para Subtrair/n 3 para Multiplicar /n 4 para Dividir:"))
+
+       if (resp == 1){
+           document.writeln("<p> A soma é = " + soma(num1,num2))
+       }
+       if (resp == 2){
+           document.writeln("<p> A subtraçao é = " + subtrair(num1,num2))
+       }
+       if (resp == 3){
+           document.writeln("<p> A multiplicaçao é = " + multiplicar(num1,num2))
+       }
+       if (resp == 4){
+           document.writeln("<p> A divisao  é = " + dividir(num1,num2))
+       }
+       if ((resp < 1) || (resp > 4)) {
+           document.writeln("Voce não escolheu uma opção valida ")
+       }
+   </script>
+</body>
+</html>
